@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap');
+
+* {
+    font-family:'Poppins', sans-serif;
+    text-align: center;
+    font-weight: bold;
+}
+
+:root {
+    --primary-color: #0aa438;
+}
+
+a{
+    color: var(--primary-color);
+    text-decoration: none;
+    margin: 1rem 0;
+}
+
+.signature-pad-form {
+    width: 30rem;
+    max-width: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.signature-pad {
+    cursor: crosshair;
+    width: 100%;
+    border: 2px solid var(--primary-color);
+    border-radius: 4px;
+}
+
+.btn-group {
+    display: flex;
+    gap: 4px;
+}
+
+.submit-button, .clear-button {
+    width: 100%;
+    background-color: var(--primary-color);
+    border: none;
+    padding: 0.5rem 1rem;
+    color: #fff;
+    cursor: pointer;
+    margin-top: 2rem;
+    border-radius: 15px;
+    font-weight: bold;
+}
+
+@media (pointer: coarse) {
+    body {
+        /* Needed to prevent the vertical scroll on touch devices */
+        overflow: hidden;
+    }
+}
